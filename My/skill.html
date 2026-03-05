@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        
+
+       
+    </style>
+</head>
+<body>
+    <div class="head">
+               <div class="logos">
+                <img src="image/my logo.jpg" alt="">
+                <p><label class="aa" style="color: rgb(5, 243, 5);">Habte</label><label style="color: yellow;" class="bb">giorgis</label><label style="color: red;" class="cc">&nbsp;Kassaye</label></p></div>            <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+             <a href="skill.html">Skills</a>
+             <a href="project.html">Projects</a>
+            <a href="contacl.html">Contact</a>
+        </div>
+    </div>
+    <div class="mainbody" >
+        <h1 class="skill">My Programming Skills</h1>
+        <div class="containers">
+            <canvas id="skillchart"></canvas>
+        </div>
+        <script>
+            const ctx = document.getElementById("skillchart").getContext("2d");
+
+            new  Chart(ctx,{
+              type: "pie",
+              data: {
+              labels: ['C++','Python','Java','Html','CSS','JavaScript'],
+              datasets: [{
+              data: [20,5,25,25,15,10],
+              backgroundColor: [
+                 '#ff6384',
+                 '#36a2eb',
+                 '#ffce56',
+                 '#4bc0c0',
+                 '#9966ff',
+                 '#2900f8'
+        ]
+                }]
+            },
+
+            Options: {
+               responsive: true
+       }
+    });
+        </script>
+    </div>
+    <div class="footer"><br>My Portfolio</div>
+    
+</body>
+</html>

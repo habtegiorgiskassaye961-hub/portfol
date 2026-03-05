@@ -1,0 +1,263 @@
+.head{
+    background-color: rgb(11, 132, 219);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 3px 3px yellow;
+    border: 1px solid yellow;
+}
+
+.head:hover{
+    
+    background-color: rgb(75, 167, 234);
+    box-shadow: 4px 3px 3px yellow;
+}   
+.head:hover .links{
+     margin-top: 25px;
+}
+.head:hover .links a{
+   
+    color: rgb(130, 4, 248);
+}
+.head .links a:hover{
+    color: rgb(245, 229, 5);
+}
+.head:hover .p label{
+    font-size: 20px;
+}
+.textsec{
+    border: 5px solid rgb(210, 242, 4);
+    border-radius: 20px;
+    width: 580px;
+    height: 150px;
+    background-color: rgb(83, 167, 235);
+}
+.textsec:hover{
+    width: 570px;
+    border: 3px solid black;
+    font-size: large;
+    background-color: rgb(38, 119, 185);
+    box-shadow: 8px 9px 7px rgb(240, 3, 3);
+}
+.textsec:hover p{
+    color: aqua;
+}
+p{
+    font-weight: bolder;
+    margin: 15px;
+    font-size: larger;
+}
+.drop-text span{
+    font-size: 30px;
+    color: blue;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: drop 0.05s  forwards;
+}
+@keyframes drop{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.drop-text span:nth-child(1){animation-delay: 0s;}
+.drop-text span:nth-child(2){animation-delay: 1s;}
+.drop-text span:nth-child(3){animation-delay: 2s;}
+.drop-text span:nth-child(4){animation-delay: 3s;}
+.drop-text span:nth-child(5){animation-delay: 4s;}
+.drop-text span:nth-child(6){animation-delay: 5s;}
+.drop-text span:nth-child(7){animation-delay: 6s;}
+.drop-text span:nth-child(8){animation-delay: 7s;}
+.drop-text span:nth-child(9){animation-delay: 8s;}
+.drop-text span:nth-child(10){animation-delay: 9s;}
+.drop-text span:nth-child(11){animation-delay: 10s;}
+.drop-text span:nth-child(12){animation-delay: 11s;}
+.drop-text span:nth-child(13){animation-delay: 12s;}
+.drop-text span:nth-child(14){animation-delay: 13s;}
+.drop-text span:nth-child(15){animation-delay: 14s;}
+.drop-text span:nth-child(16){animation-delay: 15s;}
+
+.head p{
+    font-size: larger;
+    animation: moveText 3s alternate infinite linear;
+    margin-left: 70px;
+}
+
+.head:hover p{
+    font-size: 22px;
+}
+@keyframes moveText{
+    from{transform: translateX(0px);}
+    to{transform: translateX(200px);}
+}
+.links{
+    margin-top: 18px;
+    margin-right: 200px;
+}
+.links a{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(4, 4, 33);
+    margin-left: 50px;
+    text-decoration: none;
+}
+.links a:hover{
+    
+    font-style: oblique;
+    font-size: larger;
+    color: blue;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+}
+.logos img{
+    border: 2px solid yellow;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: fadeEffect 1s infinite alternate;
+
+    /* Extra styling */
+    box-shadow:0px 0px 15px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+}
+.logos img:hover{
+    transform: scale(1.1) rotate(360deg);
+    
+}
+.image1:hover{
+    transition: all 1s ease;
+    transform: scale(1.1) rotate(720deg);
+}
+.image1{
+            box-shadow: 3px 5px 4px black;
+            width: 400px;
+            height: 450px;
+            border: 2px solid rgb(240, 10, 10);
+            
+            border-radius: 200px;
+        }
+.iam{
+    animation: changeColor 2.5s infinite;
+    
+}
+.frontend{
+    animation:  fadeEffect 1s infinite alternate;
+}
+@keyframes changeColor{
+    0%{color: red;}
+    50%{color: rgb(245, 248, 242)} 
+    100%{color: rgb(4, 36, 245);}
+}
+.iam:hover{
+   
+    text-shadow: 1px 4px 2px rgb(242, 6, 6);
+    font-size: 36px;
+    margin-left: 20px;
+    animation-play-state: paused;
+}
+
+@keyframes fadeEffect{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0.4;
+    }
+}
+.mainbody{
+    margin-bottom: -30px;
+    border: 1px solid yellow;
+    height: 700px;
+    background: linear-gradient(180deg, rgb(46, 216, 46),yellow);
+}
+.mainbody:hover{
+    background: linear-gradient(180deg,yellow,rgb(46, 216, 46));
+}
+.footer{
+    margin-top: 20px;
+    height: 50px;
+    border: 1px solid yellow;
+    background-color: rgb(11, 132, 219);
+    text-align: center;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.sec1{
+    margin-top: 100px;
+    width: 50%;
+    padding: 20px;
+}
+.sec2{
+    margin-top: 100px;
+    width: 50%; 
+    padding: 0px;
+}
+.imagediv{
+    text-align: center;
+    justify-content: center;
+    border: 5px solid red;
+    margin-left: 10px;
+    height: 450px;
+    width: 450px;
+    background: linear-gradient(180deg,rgb(55, 208, 98),yellow);
+    border-radius: 50%;
+
+}
+.imagediv:hover{
+    background: linear-gradient(180deg,yellow,rgb(55, 208, 98));
+}
+.sec2 img{
+    
+    border: 3px solid rgb(13, 84, 236);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin-left: 4px;
+}
+.sec2 img:hover{
+    transition: all 0.4s ease;
+    transform: rotate(360deg);
+    border-radius: 50%;
+     height: 390px;
+    width: 390px;
+    box-shadow: 9px 5px 5px rgb(215, 6, 219);
+}
+.sec1 h4, h1, h2, p{
+    color: rgb(5, 0, 0);
+}
+@media (max-width: 600px){
+    .mainbody{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*  skill    */
+.skill {
+            margin-top: 40px;
+        }
+
+ .containers {
+            height: 420px;
+            width: 400px;
+            margin: 40px auto;
+            box-shadow: 5px 20px 10px blue;
+            border: 5px solid black;
+            border-radius: 15px;
+        }    
+.containers:hover{
+    background: linear-gradient(180deg,rgb(66, 183, 66),rgb(225, 225, 40));
+    box-shadow: 5px 20px 10px rgb(227, 30, 16);
+    width: 410px;
+    margin: 40px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}           

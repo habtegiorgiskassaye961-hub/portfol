@@ -1,0 +1,7 @@
+#myphoto{
+    height: 600px;
+    width: 400px;
+    border-radius: 1500px;
+    border-style: double;
+    border: 10px solid rgb(243, 231, 3);
+}
